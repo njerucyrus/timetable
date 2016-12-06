@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% block content %}
+<form action="" method="post">
+{{ lecturer_form.as_p }}
+{{ user_form.as_p }}
+{% csrf_token %}
+<input type="submit" value="Create Lecturer account">
+</form>
+
+{% endblock %}
