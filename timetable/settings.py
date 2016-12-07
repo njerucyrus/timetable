@@ -172,7 +172,7 @@ STATICFILES_DIRS = (
 
 CRISPY_TEMPLATE_PACK = 'bootstrap3'
 
-#sending sms via africastalking gateway requirements
-AT_SENDER = '20880'
-AT_USERNAME = 'njerucyrus'
-AT_API_KEY = '4649d2e10c136b7d06f70b0f623f9457b5b44a8f761a9602d2eb83fadd49dabc'
+
+AT_SENDER = os.environ['AT_SENDER']
+AT_USERNAME = os.environ['AT_USERNAME']
+AT_API_KEY = os.environ['AT_API_KEY']
